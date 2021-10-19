@@ -131,7 +131,7 @@ Route::put('contacts/{contact}/restore', [ContactsController::class, 'restore'])
 
 // Reports
 
-Route::get('reports', [ReportsController::class, 'index'])
+Route::get('reports', ReportsController::class)
     ->name('reports')
     ->middleware('auth');
 
